@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "dkssud",
+  "version": "1.0.0",
+  "description": "한/영 전환 실수로 잘못 입력된 텍스트를 드래그 후 단축키로 올바르게 변환합니다.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

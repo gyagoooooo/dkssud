@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 280px;
+      background: #1e1e2e;
+      color: #cdd6f4;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .logo {
+      font-size: 24px;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #89b4fa;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      color: #6c7086;
+    }
+
+    .shortcut-box {
+      background: #313244;
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .shortcut-label {
+      font-size: 11px;
+      color: #6c7086;
+      margin-bottom: 8px;
+    }
+
+    .shortcut-keys {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      align-items: center;
+    }
+
+    kbd {
+      background: #45475a;
+      color: #cdd6f4;
+      border: 1px solid #585b70;
+      border-radius: 5px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-family: monospace;
+      box-shadow: 0 2px 0 #181825;
+    }
+
+    .plus {
+      color: #6c7086;
+      font-size: 12px;
+    }
+
+    .example-section {
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      color: #6c7086;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .example {
+      background: #313244;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 6px;
+      font-size: 12px;
+    }
+
+    .example-from {
+      color: #f38ba8;
+      text-decoration: line-through;
+      margin-bottom: 2px;
+    }
+
+    .example-to {
+      color: #a6e3a1;
+    }
+
+    .example-tag {
+      display: inline-block;
+      background: #45475a;
+      color: #89b4fa;
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-size: 10px;
+      margin-bottom: 4px;
+    }
+
+    .footer {
+      font-size: 10px;
+      color: #45475a;
+      text-align: center;
+    }
+
+    .test-area {
+      background: #313244;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 16px;
+    }
+
+    .test-area textarea {
+      width: 100%;
+      background: #1e1e2e;
+      border: 1px solid #45475a;
+      border-radius: 6px;
+      color: #cdd6f4;
+      font-size: 12px;
+      padding: 8px;
+      resize: none;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .test-area textarea:focus {
+      border-color: #89b4fa;
+    }
+
+    .test-hint {
+      font-size: 10px;
+      color: #6c7086;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">⌨️</div>
+    <div>
+      <div class="title">키보드 오타 변환기</div>
+      <div class="subtitle">한/영 잘못 입력된 텍스트 즉시 수정</div>
+    </div>
+  </div>
+
+  <div class="shortcut-box">
+    <div class="shortcut-label">변환 단축키</div>
+    <div class="shortcut-keys">
+      <kbd>Ctrl</kbd>
+      <span class="plus">+</span>
+      <kbd>Shift</kbd>
+      <span class="plus">+</span>
+      <kbd>K</kbd>
+    </div>
+  </div>
+
+  <div class="example-section">
+    <div class="section-title">변환 예시</div>
+
+    <div class="example">
+      <div class="example-tag">영어 자판 → 한글</div>
+      <div class="example-from">dusdnr</div>
+      <div class="example-to">→ 안녕</div>
+    </div>
+
+    <div class="example">
+      <div class="example-tag">한글 자판 → 영어</div>
+      <div class="example-from">ㅗㄷㅣㅣㅐ</div>
+      <div class="example-to">→ hello</div>
+    </div>
+  </div>
+
+  <div class="test-area">
+    <div class="section-title">여기서 테스트</div>
+    <textarea rows="2" placeholder="잘못 입력된 텍스트를 여기 붙여넣고&#10;드래그 후 Ctrl+Shift+K"></textarea>
+    <div class="test-hint">텍스트를 드래그 선택 후 단축키를 누르세요</div>
+  </div>
+
+  <div class="footer">텍스트 드래그 → Ctrl+Shift+K</div>
+</body>
+</html>
