@@ -53,16 +53,11 @@ hello
 
 ## 📷 Screenshots
 
-### Extension Popup
-
 <p align="center">
-  <img src="./screenshots/popup.png" width="320">
+  <img src="./icons/icon48.png" width="320">
 </p>
-
-### Text Conversion
-
 <p align="center">
-  <img src="./screenshots/screenshot1.png" width="700">
+  <img src="./icons/icon128.png" width="700">
 </p>
 
 ---
