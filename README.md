@@ -54,9 +54,6 @@ hello
 ## 📷 Screenshots
 
 <p align="center">
-  <img src="./icons/icon48.png" width="320">
-</p>
-<p align="center">
   <img src="./icons/icon128.png" width="700">
 </p>
 
